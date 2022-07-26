@@ -1,30 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unique Home Spa</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="/img/logo.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Residential</a></li>
-                <li><a href="#">Commercial</a></li>
-                <li><a href="#">Service Request</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive Portfolio Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">Unique Home Spa</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#residential" class="nav__link">
+                <i class="uil uil-home nav__icon"></i> Residencial
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#commercial" class="nav__link">
+                <i class="uil uil-building nav__icon"></i> Commercial
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#service" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Service Request
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
 
-        <div class="content">
-            <h1>Unique Home Spa</h1>
-            <p>We treat every home as our home!</p>
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
         </div>
-    </div> 
-</body>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-facebook-f"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="-50"
+                    y="-10"
+                    xlink:href="assets/img/background.jpg"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Unique Home Spa</h1>
+              <h3 class="home__subtitle">We treat every home as our home!</h3>
+              <p class="home__description">
+                If you are looking for a reliable housekeeping or office
+                cleaning service in San Diego, look no further. You have found
+                the best maid and home cleaning services in San Diego County:
+                Clean Freak Cleaning Services. The name says it all! We are here
+                to cater to all your cleaning needs, whether in a home, an
+                apartment, or an office. As a young, professional house and
+                office cleaning company with a drive to do our best, we work
+                hard every day to provide a cleaning service that we can be
+                proud of. We understand how much trust our customers place in us
+                and we confidently stand by our name and take on any challenge.
+                <br />
+                <br />
+                This company started with a passion: to help our clients free up
+                their time so they can do the things they enjoy. Living in San
+                Diego, California, we understand that life moves quickly. Our
+                dream is to enhance our clients’ lives by providing a cleaning
+                service that will keep them coming back for more.
+                <br />
+                <br />
+                Unique Home Spa is a luxury home cleaning service
+                that is unique to each client’s individual needs. You can trust
+                us to enter your home with respect and take excellent care of
+                it. Our greatest reward is the smile on each customer’s face
+                when they see how clean and organized their home or office is
+                once we have worked our magic!
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Us <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll Down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Us</h2>
+        <span class="section__subtitle">Why You Should Choose Clean Freak Cleaning Services</span>
+
+        <div class="about__container container grid">
+            <img src="assets/img/about.jpg" alt="" class="about__img">
+
+            <div class="about__data">
+                
+            </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills"></section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section"></section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services"></section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio"></section>
+
+      <!--==================== PROJECT IN MIND ====================-->
+      <section class="project section"></section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section"></section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+    <!--==================== SWIPER JS ====================-->
+    <script src=""></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
