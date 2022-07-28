@@ -22,6 +22,8 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --scroll-bar-color: hsl(var(--hue-color),12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color),12%, 80%);
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -72,12 +74,14 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   /* HSL color mode */
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
-  --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --first-color-second: hsl(230, 30%, 8%);
+  --title-color: hsl(230, 8%, 95%);
+  --text-color: hsl(230, 8%, 75%);
+  --input-color: hsl(230, 29%, 16%);
+  --body-color: hsl(230, 28%, 12%);
+  --container-color: hsl(230, 29%, 16%);
+  --scroll-bar-color: hsl(230,12%, 48%);
+  --scroll-thumb-color: hsl(230,12%, 36%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -992,7 +996,20 @@ img {
 
 
 /*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--text-color-light);
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
