@@ -273,6 +273,10 @@ img {
 
 
 /*==================== HOME ====================*/
+.img__logo{
+  width: 100px;
+}
+
 .home__container{
   gap: 1rem;
 }
