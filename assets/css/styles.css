@@ -1092,10 +1092,6 @@ img {
     justify-self: center;
   }
 
-  .img__logo{
-    width: 50px;
-  }
-
   .about__container,
   .skills__container,
   .portfolio__content,
