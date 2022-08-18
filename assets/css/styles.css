@@ -1030,6 +1030,10 @@ img {
     column-gap: 0;
   }
 
+  .img__logo{
+    width: 50px;
+  }
+
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
@@ -1086,6 +1090,10 @@ img {
   .home__img{
     order: 1;
     justify-self: center;
+  }
+
+  .img__logo{
+    width: 50px;
   }
 
   .about__container,
