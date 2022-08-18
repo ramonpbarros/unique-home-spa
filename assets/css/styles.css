@@ -1017,7 +1017,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 390px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1031,7 +1031,7 @@ img {
   }
 
   .img__logo{
-    width: 40px;
+    width: 60px;
   }
 
   .home__content{
