@@ -66,7 +66,7 @@
 
         <div class="nav__btns">
           <!-- Theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
 
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
@@ -130,15 +130,16 @@
                   <image
                     class="home__blob-img"
                     x="-50"
-                    y="-60"
-                    xlink:href="assets/img/logo3.png"
+                    y="-10"
+                    xlink:href="assets/img/background.jpg"
                   />
                 </g>
               </svg>
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Unique Home Spa</h1>
+              <!-- <h1 class="home__title">Unique Home Spa</h1> -->
+              <img class="home__title" src="/assets/img/logo4.png" alt="Unique logo" width="100%">
               <h3 class="home__subtitle">We treat every home as our home!</h3>
               <p class="home__description">
                 Our cleaning company offers detailed and affordable housekeeping
@@ -611,7 +612,7 @@
             <!--==================== COMMERCIAL 1 ====================-->
             <div class="skills__content skills__close">
               <div class="skills__header">
-                <i class="uil uil-utensils skills__icon"></i>
+                <i class="uil uil-location-arrow-alt skills__icon"></i>
 
                 <div>
                   <h1 class="skills__title">AIRBNB</h1>
@@ -753,7 +754,7 @@
             <!--==================== COMMERCIAL 2 ====================-->
             <div class="skills__content skills__close">
               <div class="skills__header">
-                <i class="uil uil-toilet-paper skills__icon"></i>
+                <i class="uil uil-key-skeleton-alt skills__icon"></i>
 
                 <div>
                   <h1 class="skills__title">PROPERTY MANAGEMENT</h1>
@@ -847,7 +848,7 @@
             <!--==================== COMMERCIAL 3 ====================-->
             <div class="skills__content skills__close">
               <div class="skills__header">
-                <i class="uil uil-tv-retro skills__icon"></i>
+                <i class="uil uil-store skills__icon"></i>
 
                 <div>
                   <h1 class="skills__title">OFFICE AND JANITORIAL</h1>
@@ -974,7 +975,7 @@
             <!--==================== COMMERCIAL 4 ====================-->
             <div class="skills__content skills__close">
               <div class="skills__header">
-                <i class="uil uil-tv-retro skills__icon"></i>
+                <i class="uil uil-home skills__icon"></i>
 
                 <div>
                   <h1 class="skills__title">REAL ESTATE AGENTS</h1>
@@ -1281,7 +1282,7 @@
       </section>
 
       <!--==================== SERVICES ====================-->
-      <section class="services section" id="services">
+      <section class="services section" id="#">
         <h2 class="section__title">Services</h2>
         <span class="section__subtitle">What i offer</span>
 
@@ -1666,7 +1667,7 @@
           <form action="" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
+                <label for="" class="contact__label">Full Name</label>
                 <input type="text" class="contact__input" />
               </div>
               <div class="contact__content">
@@ -1678,16 +1679,40 @@
                 <input type="number" class="contact__input" />
               </div>
               <div class="contact__content">
-                <label for="" class="contact__label">Full Address</label>
+                <label for="" class="contact__label">Address</label>
                 <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">City</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Zip Code</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Appointment Date</label>
+                <input type="date" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Appointment Time</label>
+                <input type="time" class="contact__input" />
               </div>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">How many bedrooms?</label>
-              <input type="text" class="contact__input" />
+              <label for="" class="contact__label">Number of bedrooms</label>
+              <input type="number" class="contact__input" />
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">How many bathrooms?</label>
+              <label for="" class="contact__label">Number of bathrooms</label>
+              <input type="number" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Square footage</label>
+              <input type="number" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Pets (if any)</label>
               <input type="text" class="contact__input" />
             </div>
             <div class="contact__content">
@@ -1717,18 +1742,23 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title">Unique Home Spa</h1>
-            <span class="footer__subtitle"
+            <!-- <h1 class="footer__title">Unique Home Spa</h1> -->
+            <img class="footer__title" src="/assets/img/logo5.png" alt="Unique white" width="60%">
+            <!-- <br> -->
+            <!-- <span class="footer__subtitle"
               >We treat every home as our home!</span
-            >
+            > -->
           </div>
 
           <ul class="footer__links">
             <li>
-              <a href="#services" class="footer__link">Services</a>
+              <a href="#about" class="footer__link">About</a>
             </li>
             <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
+              <a href="#skills" class="footer__link">Residential</a>
+            </li>
+            <li>
+              <a href="#services" class="footer__link">Commercial</a>
             </li>
             <li>
               <a href="#contact" class="footer__link">Contact</a>
