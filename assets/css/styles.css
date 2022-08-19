@@ -282,7 +282,7 @@ img {
 
 
 /*==================== HOME ====================*/
-.img__logo{
+.nav__logo{
   width: 100px;
 }
 
@@ -314,7 +314,7 @@ img {
 .home__blob{
   width: 200px;
   fill: var(--first-color);
-  border-radius: 5px;
+  border-radius: 5px; 
 }
 
 .home__blob-img{
@@ -1040,15 +1040,16 @@ img {
     column-gap: 0;
   }
 
-  .img__logo{
-    width: 40px;
+  .nav__logo{
+    width: 50px;
   }
 
   .home__content{
-    grid-template-columns: .25fr 3fr;
+    grid-template-columns: .25fr 1fr;
   }
   .home__blob{
     width: 180px;
+    justify-content: center;
   }
 
   .skills_title{
@@ -1086,6 +1087,10 @@ img {
   .testimonial__data,
   .testimonial__description{
     text-align: center;
+  }
+
+  .footer__title{
+    width: 30%;
   }
 }
 
