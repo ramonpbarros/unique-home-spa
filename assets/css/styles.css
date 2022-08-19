@@ -314,10 +314,11 @@ img {
 .home__blob{
   width: 200px;
   fill: var(--first-color);
+  border-radius: 5px;
 }
 
 .home__blob-img{
-  width: 300px;
+  width: 160px;
 }
 
 .home__data{
