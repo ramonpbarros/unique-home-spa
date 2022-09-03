@@ -205,22 +205,36 @@ const selectedIcon = localStorage.getItem("selected-icon");
 
 function myFunction() {
   let element = document.body;
-  let el = document.getElementById("theme-button")
+  let el = document.getElementById("theme-button");
 
-  let superToggle = function(element, class0, class1) {
-    element.classList.toggle(class0);
-    element.classList.toggle(class1);
+  let superToggle = function (element, class1, class2) {
+    // element.classList.toggle(class0);
+    element.classList.add(class1);
+    element.classList.remove(class2);
+  };
+
+  element.classList.toggle("dark-mode");
+
+  // if (document.querySelector(".uil-moon")) {
+  //   superToggle(el, "uil-sun", "uil-moon");
+  // } else if (document.querySelector(".uil-sun")){
+  //   superToggle(el, "uil-moon", "uil-sun");
+  // }
+  if (document.querySelector(".uil-sun")) {
+    superToggle(el, "uil-moon", "uil-sun");
+  } else if (document.querySelector(".uil-moon")) {
+    superToggle(el, "uil-sun", "uil-moon");
   }
-  
-  superToggle(element,'dark-mode', 'uil-sun');
-  superToggle(el,'uil', 'uil-sun');
+
+  // superToggle(element,'dark-mode', 'uil-sun', 'uil-moon');
+  // superToggle(el, "uil-sun", "uil-moon");
   // if (element.classList.contains("uil")) {
   //   document
   //   .getElementById("display_advance")
   //   .toggle("1000")
   //   .html('<i class="uil uil-sun change-theme"></i>')
   //   .attr("id", "display_advance");
-    
+
   //   console.log('moon');
   // } else if (element.classList.contains("uil-sun")) {
   //   document
@@ -228,10 +242,9 @@ function myFunction() {
   //   .toggle("1000")
   //   .html('<i class="uil uil-moon change-theme"></i>')
   //   .attr("id", "display_advance");
-    
+
   //   console.log('sun');
   // }
-  // element.classList.toggle("dark-mode");
 }
 
 // $("#click_advance").click(function () {

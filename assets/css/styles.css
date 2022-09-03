@@ -388,6 +388,7 @@ img {
 
 .home__scroll {
   display: none;
+  margin-top: -20px;
 }
 
 .home__scroll-button {
