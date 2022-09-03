@@ -105,6 +105,11 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 /*========== Button Dark/Light ==========*/
 .nav__btns {
   display: flex;
