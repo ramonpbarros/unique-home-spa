@@ -388,7 +388,7 @@ img {
 
 .home__scroll {
   display: none;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .home__scroll-button {
@@ -416,7 +416,7 @@ img {
 }
 
 /*==================== BUTTONS ====================*/
-.button {
+/* .button {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -424,10 +424,53 @@ img {
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
   cursor: pointer;
+  border: transparent;
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: hsl(206, 66%, 12%);
+} */
+.button {
+  border-radius: 4px;
+  background-color: var(--first-color);
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 16px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  margin-left: 0px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 7px;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 30px;
+}
+
+.button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 .button__icon {
