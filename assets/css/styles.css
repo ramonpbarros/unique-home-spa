@@ -129,7 +129,7 @@ body.dark-theme {
 
   --nav-text-color: #E6E9EB;
 
-  --form-text-color: black;
+  --form-text-color: white;
 
   --footer-text-color: red
   --footer-text-color-hover: white;
@@ -961,13 +961,13 @@ img {
 
 .contact__label {
   font-size: var(--smaller-font-size);
-  color: var(--text-color);
+  color: var(--form-text-color);
 }
 
 .contact__input {
   width: 100%;
   background-color: var(--input-color);
-  color: var(--text-color);
+  color: var(--form-text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   border: none;
