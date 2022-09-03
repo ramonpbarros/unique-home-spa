@@ -34,6 +34,13 @@
   --scroll-bar-color: hsl(230, 12%, 48%);
   --scroll-thumb-color: hsl(230, 12%, 36%);
 
+  --form-text-color: hsl(230, 8%, 75%);
+
+  --footer-text-color: #03989D;
+  --footer-text-color-hover: white;
+
+  --icon-color: white;
+
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -96,6 +103,7 @@ body.dark-theme {
   
   --first-color-second: #E6E9EB;
   /* --first-color-second: hsl(230, 30%, 8%); */
+  /* --nav-text-color: red; */
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
@@ -106,8 +114,27 @@ body.dark-theme {
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
+  background-color: hsl(0, 100%, 99%);
+  color: black;
+  
+  --first-color-second: #0A2031;
+  /* --first-color-second: hsl(230, 30%, 8%); */
+  --title-color: black;
+  --text-color: black;
+  --input-color: #03989D;
+  /* --body-color: hsl(var(--hue-color), 60%, 99%); */
+  /* --container-color: #fff; */
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  --nav-text-color: #E6E9EB;
+
+  --form-text-color: black;
+
+  --footer-text-color: red
+  --footer-text-color-hover: white;
+
+  --icon-color: white;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -118,7 +145,7 @@ body.dark-theme {
 
 .change-theme {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--icon-color);
   margin-right: var(--mb-1);
   cursor: pointer;
 }
@@ -174,7 +201,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .section__subtitle {
@@ -261,7 +288,7 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--nav-text-color);
   font-weight: var(--font-medium);
 }
 
@@ -505,7 +532,7 @@ img {
 
 .skills__subtitle {
   font-size: var(--text-color-light);
-  color: var(--text-color-light);
+  color: var(--text-color);
 }
 
 .skills__arrow {
@@ -527,6 +554,10 @@ img {
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+}
+
+.skills_text_color{
+  color: var(--text-color);
 }
 
 .skills__bar,
@@ -918,7 +949,7 @@ img {
 
 .contact__subtitle {
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: var(--text-color);
 }
 
 .contact__content {
@@ -929,7 +960,7 @@ img {
 
 .contact__label {
   font-size: var(--smaller-font-size);
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .contact__input {
@@ -973,7 +1004,9 @@ img {
 }
 
 .footer__link:hover {
-  color: var(--first-color-lighter);
+  color: var(--first-color);
+  ;
+  /* color: var(--first-color-lighter); */
 }
 
 .footer__social {
@@ -982,7 +1015,7 @@ img {
 }
 
 .footer__social:hover {
-  color: var(--first-color-lighter);
+  color: var(--first-color);
 }
 
 .footer__copy {
@@ -996,7 +1029,8 @@ img {
 .footer__subtitle,
 .footer__link,
 .footer__social {
-  color: #fff;
+  color: var(--nav-text-color);
+  ;
 }
 /*========== SCROLL UP ==========*/
 .scrollup {

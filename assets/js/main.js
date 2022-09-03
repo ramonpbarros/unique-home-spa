@@ -177,34 +177,76 @@ const selectedIcon = localStorage.getItem("selected-icon");
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 
-const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? "dark" : "light";
-const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+// const getCurrentTheme = () =>
+//   document.body.classList.contains(darkTheme) ? "dark" : "light";
+// const getCurrentIcon = () =>
+//   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
 // We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme
-  );
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-    iconTheme
-  );
-}
+// if (selectedTheme) {
+//   If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+//   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+//     darkTheme
+//   );
+//   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+//     iconTheme
+//   );
+// }
 
 // Activate / deactivate the theme manually with the button
-themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
-});
-
+// themeButton.addEventListener("click", () => {
+//   Add or remove the dark / icon theme
+//   document.body.classList.toggle(darkTheme);
+//   themeButton.classList.toggle(iconTheme);
+//   We save the theme and the current icon that the user chose
+//   localStorage.setItem("selected-theme", getCurrentTheme());
+//   localStorage.setItem("selected-icon", getCurrentIcon());
+// });
 
 function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+  let element = document.body;
+  let el = document.getElementById("theme-button")
+
+  let superToggle = function(element, class0, class1) {
+    element.classList.toggle(class0);
+    element.classList.toggle(class1);
+  }
+  
+  superToggle(element,'dark-mode', 'uil-sun');
+  superToggle(el,'uil', 'uil-sun');
+  // if (element.classList.contains("uil")) {
+  //   document
+  //   .getElementById("display_advance")
+  //   .toggle("1000")
+  //   .html('<i class="uil uil-sun change-theme"></i>')
+  //   .attr("id", "display_advance");
+    
+  //   console.log('moon');
+  // } else if (element.classList.contains("uil-sun")) {
+  //   document
+  //   .getElementById("display_advance")
+  //   .toggle("1000")
+  //   .html('<i class="uil uil-moon change-theme"></i>')
+  //   .attr("id", "display_advance");
+    
+  //   console.log('sun');
+  // }
+  // element.classList.toggle("dark-mode");
 }
+
+// $("#click_advance").click(function () {
+//   var element = document.body;
+//   element.classList.toggle("dark-mode");
+//   element.classList.add("nav__link");
+
+//   let el = document.getElementById("display_advance");
+
+//   if (el.classList.contains("uil-moon")) {
+//     $("#display_advance").toggle("1000");
+//     $(this)
+//       .html('<i class="uil uil-sun change-theme"></i>')
+//       .attr("id", "display_advance");
+//   } else if(document.getElementById("display_advance").classList.contains("uil-sun")){
+//     $(this).html('<i class="uil uil-moon change-theme"></i>')
+//   }
+// });
