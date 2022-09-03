@@ -1087,6 +1087,7 @@ img {
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
+  margin-bottom: 25px;
 }
 
 .scrollup:hover {
