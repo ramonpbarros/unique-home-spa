@@ -247,21 +247,24 @@ img {
 
 .nav__logo,
 .nav__toggle {
-  color: var(--title-color);
+  /* color: var(--title-color); */
   font-weight: var(--font-medium);
+  margin-top: 1%;
+  
 }
 
 .nav__logo:hover {
-  color: var(--first-color);
+  /* color: var(--first-color); */
 }
 
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
+  color: var(--icon-color);
 }
 
 .nav__toggle:hover {
-  color: var(--first-color);
+  color: red;
 }
 
 @media screen and (max-width: 767px) {
@@ -1122,7 +1125,22 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 412px) {
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      .chat__icon{
+        width: 50px;
+        visibility: hidden;
+      }
+
+    }
+    
+    /* For small devices */
+    @media screen and (max-width: 412px) {
+  .button--center{
+    margin: 0 auto;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1186,6 +1204,12 @@ img {
 
   .footer__title {
     width: 30%;
+  }
+
+  .chat__icon{
+    /* width: 100px; */
+    visibility: hidden;
+    display: none;
   }
 }
 
