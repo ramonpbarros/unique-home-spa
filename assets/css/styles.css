@@ -1021,6 +1021,14 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.tel {
+  cursor: pointer;
+}
+
+.tel:hover{
+  color: #03989D;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
